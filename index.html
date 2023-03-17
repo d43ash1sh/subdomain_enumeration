@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Subdomain Enumeration Tool</title>
+</head>
+
+<body>
+    <h1>Subdomain Enumeration Tool</h1>
+    <form>
+        <label for="domain">Enter the domain name:</label>
+        <input type="text" id="domain" name="domain"><br><br>
+        <input type="button" value="Enumerate Subdomains" onclick="enumerateSubdomains()">
+    </form>
+    <br>
+    <h2>Subdomains:</h2>
+    <pre id="subdomains"></pre>
+    <script>
+        function enumerateSubdomains() {
+            var domain = document.getElementById("domain").value;
+            var url = "https://crt.sh/?q=%25." + domain + "&output=json";
+            fetch(url)
+                .then(response => response.json())
+                .then(data => {
+                    var subdomains = [];
+                    data.forEach(function (item) {
+                        var subdomain = item.name_value.replace("*.", "");
+                        if (!subdomains.includes(subdomain)) {
+                            subdomains.push(subdomain);
+                        }
+                    });
+                    subdomains.sort();
+                    document.getElementById("subdomains").textContent = subdomains.join("\n");
+                })
+                .catch(error => console.error(error));
+        }
+    </script>
+    <p>Find more of my work at <a href="https://github.com/d43ash1sh">https://github.com/d43ash1sh</a></p>
+    <p>⚡️ জ য় আ ই অ স ম ⚡️</p>
+</body>
+
+</html>
