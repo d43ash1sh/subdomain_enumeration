@@ -31,6 +31,8 @@ To install these dependencies on CentOS and Red Hat-based systems, run the follo
 
 `sudo yum install curl jq`
 
+## Screenshot
+
 ![Screenshot](./subdomain_enumeration.png)
 
 ## Contact
