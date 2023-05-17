@@ -33,7 +33,7 @@ To install these dependencies on CentOS and Red Hat-based systems, run the follo
 
 ## Screenshot
 
-![Screenshot](./subdomain_enumeration.png)
+![Screenshot](https://firebasestorage.googleapis.com/v0/b/storagefirebase2022.appspot.com/o/subdomain_enumeration.png?alt=media&token=78595cac-643b-45c5-99e9-87678230982f)
 
 ## Contact
 
