@@ -1,5 +1,10 @@
 #!/bin/bash
 
+# ENHANCEMENT 
+# Adding switches 
+# Adding functions
+# Outputing in file
+
 echo ""
 echo ".  ..__..__ .___  .__ .   ,  .__ .___.__ .__. __..  .._. __..  ."
 echo "|\/|[__]|  \[__   [__) \./   |  \[__ [__)[__](__ |__| | (__ |__|"
